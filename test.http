@@ -1,0 +1,27 @@
+POST http://localhost:8080/employees/add
+Content-Type: application/json
+
+{
+  "name": "Abdul",
+  "email": "abdul@gmail.com",
+  "department": "IT",
+  "salary": 50000
+}
+###
+
+GET http://localhost:8080/employees/all
+
+###
+PUT http://localhost:8080/employees/update/1
+Content-Type: application/json
+
+{
+  "name": "Abdul Updated",
+  "email": "abdulnew@gmail.com",
+  "department": "HR",
+  "salary": 60000
+}
+
+###
+
+DELETE http://localhost:8080/employees/delete/1
